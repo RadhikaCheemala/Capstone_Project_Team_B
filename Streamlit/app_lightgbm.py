@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
+
 # Load the trained model and encoders
 model = lgb.Booster(model_file='lightgbm_model.txt')
 with open('label_encoders.pkl', 'rb') as file:
